@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赤星 里奈</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  <h2 class="text-center">
+    <form action="/api/hello" method="get">
+      <div>お問い合わせ</div>
+      <div>contact</div>
+  </h2>
+  <div>
+    <div class="my-4 text-center">
+      ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、こちらからお願い致します。
+    </div>
+    <form action="/api/hello" method="get" novalidate id="contact-form" class="grid grid-cols-1 gap-4">
+      <div>
+        <label for="name">お名前</label>
+        <input class="w-full" id="name" name="name">
+        <p>・ 入力必須です</p>
+        <label for="email">メールアドレス</label>
+        <input class="w-full" id="email" name="email">
+        <p>・ 入力必須です</p>
+        <p>・ メールアドレスを入力してください</p>
+        <div>
+          <label>お問い合わせの種別:</label>
+          <select name="kinds">
+            <option value="playrequest">演奏依頼</option>
+            <option value="request">企業からのご依頼</option>
+            <option value="others">その他</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">お問い合わせの内容</label>
+          <textarea class="w-full" id="message" name="message"></textarea>
+          <p>・ 入力必須です</p>
+          <input type="submit" value="送信">
+        </div>
+      </div>
+  </div>
+</body>

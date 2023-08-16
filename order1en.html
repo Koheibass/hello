@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header Sample</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div="header">
+      <h1>Rina Akaboshi</h1>
+    <nav>
+      <ul="menu-group">
+        <li="menu-item"><a href="index.html#prof">プロフィール</a></li>
+        <li="menu-item"><a href="index.html#concert">コンサート</a></li>
+        <li="menu-item"><a href="index.html#media">メディア</a></li>
+        <li="menu-item"><a href="index.html#CD">CD</a></li>
+        <li="menu-item"><a href="index.html#contact">お問い合わせ</a></li>
+      </ul>
+      <a href="https://twitter.com/akaboshirina">
+        <img src="twitter.svg" width="28" height="28" alt="twitter">
+       </a>
+       <a href="https://www.youtube.com/@akaboshirina">
+        <img src="YouTube.svg" width="30" height="30" alt="YouTube">
+       </a>
+      <button onclick="window.open('')">Japanese</button>
+    </nav>
+  </header>
+  <main>
+    <h2>CDを購入</h2>
+    <p>Order</p>
+    <form action="/form.php" method="post">
+        <div>
+            <label for="name">お名前</label>
+            <input type="text" id="name" name="name">
+            <label for="email">メールアドレス</label>
+            <input type="mail" id="email" name="email">
+            <label for="phone">電話番号</label>
+            <input type="number" id="phone" name="phone">
+            <label for="postnumber">郵便番号</label>
+            <input type="post" id="postnumber" name="postnumber">
+            <label for="address">住所</label>
+            <input type="add" id="address" name="addres">
+            <div>
+              <label>ご希望枚数:</label>
+              <select name="kinds">
+                <option value="one">1枚</option>
+                <option value="two">2枚</option>
+                <option value="three">3枚</option>
+                <option value="four more">4枚以上</option>
+              </select>
+            <label for="message">備考</label>
+            <textarea id="message" name="message"></textarea> 
+            <input type="submit" value="CDを購入">
+            </div>
+        </div>
+  </main>
+  <footer>
+    <a href="https://twitter.com/akaboshirina">
+        <img src="twitter.svg" width="28" height="28" alt="twitter">
+       </a>
+       <a href="https://www.youtube.com/@akaboshirina">
+        <img src="YouTube.svg" width="30" height="30" alt="YouTube">
+       </a>
+      <div="footer-logo">© 2023 Rina Akaboshi</div>
+  </footer>
+</body>
+ <a href="/updates/2.html"></a>
+</html> 

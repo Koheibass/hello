@@ -1,0 +1,145 @@
+.header {
+    background-color: #ffeeee;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #a07c43;
+    font-size: 30px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    float: left;
+    padding: 10px;
+}
+
+a {
+    color: #a07c43;
+}
+
+main {
+    background-color: #fefaff;
+}
+
+.news {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.news span {
+    display: inline;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ec4899;
+}
+
+.news a {
+    display: inline;
+    margin-left: 0.5rem;
+    color: #ffa4ac;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-center2 {
+    display: grid;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    grid-template-columns: repeat;
+    justify-content: center;
+}
+
+.movie {
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.flex1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.concert {
+    text-align: center;
+}
+
+.concert2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.media2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+            minmax(100px, 1fr));
+    column-gap: 200px;
+    row-gap: 10px;
+}
+
+.media3 {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.movie2 {
+    text-align: center;
+}
+
+.mt-2 {
+    clear: both;
+}
+
+.CD {
+    display: grid;
+}
+
+.my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.gap-4 {
+    gap: 1rem;
+}
