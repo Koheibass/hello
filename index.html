@@ -200,18 +200,22 @@
           <input class="w-full" id="name" name="name">
           <p>・ 入力必須です</p>
           <label for="email">メールアドレス</label>
-          <input type="mail" id="email" name="email">
+          <input class="w-full" id="email" name="email">
           <p>・ 入力必須です</p>
           <p>・ メールアドレスを入力してください</p>
           <div>
             <label>お問い合わせの種別:</label>
+          </div>
+          <div>
             <select name="kinds">
               <option value="playrequest">演奏依頼</option>
               <option value="request">企業からのご依頼</option>
               <option value="others">その他</option>
             </select>
+          </div>
+          <div>
             <label for="message">お問い合わせの内容</label>
-            <textarea id="message" name="message"></textarea>
+            <textarea class="w-full" id="message" name="message"></textarea>
             <p>・ 入力必須です</p>
             <input type="submit" value="送信">
           </div>

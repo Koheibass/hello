@@ -143,3 +143,7 @@ main {
 .gap-4 {
     gap: 1rem;
 }
+
+.w-full {
+    width: 100%;
+}
