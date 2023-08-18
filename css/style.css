@@ -147,3 +147,42 @@ main {
 .w-full {
     width: 100%;
 }
+
+.bg-header {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 238 238 / var(--tw-bg-opacity));
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.bg-secondary {
+    background-color: hsl(var(--secondary));
+}
+
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.text-red-500 {
+    --tw-text-opacity: 1;
+    color: rgb(239 68 68 / var(--tw-text-opacity));
+}

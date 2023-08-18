@@ -186,52 +186,53 @@
       </div>
     </div>
     <h2 class="text-center">
-      <form action="/api/hello" method="get">
-        <div>お問い合わせ</div>
-        <div>contact</div>
+      <div>お問い合わせ</div>
+      <div class="">contact</div>
     </h2>
     <div>
-      <div class="my-4 text-center">
-        ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、こちらからお願い致します。
-      </div>
+      <div class="my-4 text-center">ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、こちらからお願い致します。</div>
       <form action="/api/hello" method="get" novalidate id="contact-form" class="grid grid-cols-1 gap-4">
         <div>
           <label for="name">お名前</label>
-          <input class="w-full" id="name" name="name">
-          <p>・ 入力必須です</p>
-          <label for="email">メールアドレス</label>
-          <input class="w-full" id="email" name="email">
-          <p>・ 入力必須です</p>
-          <p>・ メールアドレスを入力してください</p>
-          <div>
-            <label>お問い合わせの種別:</label>
-          </div>
-          <div>
-            <select name="kinds">
-              <option value="playrequest">演奏依頼</option>
-              <option value="request">企業からのご依頼</option>
-              <option value="others">その他</option>
-            </select>
-          </div>
-          <div>
-            <label for="message">お問い合わせの内容</label>
-            <textarea class="w-full" id="message" name="message"></textarea>
-            <p>・ 入力必須です</p>
-            <input type="submit" value="送信">
-          </div>
+          <input class="flex w-full" id="name" name="name">
+          <div class="text-sm text-red-500">必須</div>
         </div>
+        <div>
+          <label for="email">メールアドレス</label>
+          <input class="flex w-full" id="email" name="email">
+          <div class="text-sm text-red-500">必須</div>
+        </div>
+        <div>
+          <label class="text-sm" for="contact-form-type">お問い合わせの種別</label>
+          <select name="type">
+            <option value="playrequest">演奏依頼</option>
+            <option value="request">企業からのご依頼</option>
+            <option value="others">その他</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">お問い合わせの内容</label>
+          <textarea class="flex w-full" id="message" name="message"></textarea>
+          <div class="text-sm text-red-500">必須</div>
+        </div>
+        <button class="inline-flex items-center justify-center bg-secondary" type="submit"
+          data-comform-touched="true">送信</button>
+      </form>
+    </div>
     </div>
   </main>
-  <footer>
-    <a href="https://twitter.com/akaboshirina">
-      <img src="twitter.svg" width="28" height="28" alt="twitter">
-    </a>
-    <a href="https://www.youtube.com/@akaboshirina">
-      <img src="YouTube.svg" width="30" height="30" alt="YouTube">
-    </a>
-    <div>© 2023 Rina Akaboshi</div>
-  </footer>
+  <div class="mt-8 bg-header">
+    <div class="flex justify-center">
+      <div class="inline-flex">
+        <a href="https://twitter.com/akaboshirina">
+          <img src="twitter.svg" width="28" height="28" alt="twitter">
+        </a>
+        <a href="https://www.youtube.com/@akaboshirina">
+          <img src="YouTube.svg" width="30" height="30" alt="YouTube">
+        </a>
+      </div>
+    </div>
+    <div class="mt-8 text-center">© 2023 Rina Akaboshi</div>
 </body>
-<a href="/updates/2.html"></a>
 
 </html>
