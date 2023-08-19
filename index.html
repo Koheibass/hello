@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>赤星 里奈</title>
+  <title>ピアニスト赤星 里奈 公式ウェブサイト - Pianist Rina Akaboshi</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -32,25 +32,33 @@
     </div>
   </header>
   <main>
-    <div class="news">
-      <span>NEWS</span>
-      <a href="updates2.html">カルチャーメディア誌「Bridge」に掲載されました。</a>
+    <div class="mx-auto mt-4 flex items-center justify-center gap-2">
+      <div class="bg-pink-500 px-2.5 py-2 text-lg rounded text-white tracking-wide">NEWS</div>
+      <a href="updates2.html">
+        <span class="inline">カルチャーメディア誌「Bridge」に掲載されました。</span>
+      </a>
     </div>
-    <div class="container">
+    <section class="grid grid-cols-2 gap-4">
       <div>
-        <h3 class="text-center">
+        <h3 class="text-center py-8 leading-none color1">
           <div>最新情報</div>
           <div>updates</div>
         </h3>
         <div class="text-center2">
-          <div>2022.02.12(Sat)</div>
-          <a href="updates2.html">カルチャーメディア誌「Bridge」に掲載されました。</a>
-          <div>2021.05.31(Mon)</div>
-          <a href="concert1.html">オンラインコンサート開催決定！</a>
+          <div class="text-sm color1">
+            "2022.02.12"
+            <small>(Sat)</small>
+          </div>
+          <a href="updates2.html" class="block color2 underline">カルチャーメディア誌「Bridge」に掲載されました。</a>
+          <div class="text-sm color1">
+            "2021.05.31"
+            <small>(Mon)</small>
+          </div>
+          <a href="concert1.html" class="block color2 underline">オンラインコンサート開催決定！</a>
         </div>
       </div>
       <div>
-        <h3 class="text-center">
+        <h3 class="text-center py-8 leading-none color1">
           <div>演奏動画</div>
           <div>Movies</div>
         </h3>
@@ -59,33 +67,53 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-          <p>ベートーヴェン：ピアノソナタ第26番「告別」op.81a</p>
-          <a href="videos1.html">> もっと見る</a>
+          <div class="text-center text-xs color1 py-8">
+            ベートーヴェン：ピアノソナタ第26番「告別」op.81a
+          </div>
+          <div class="text-center">
+            <button class="inline-block rounded border border-color">
+              <a href="media/videos1.html">> もっと見る</a>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <h2 class="text-center">
-      <div>プロフィール</div>
-      <div>Biography</div>
-    </h2>
-    <div class="flex1">
-      <div class="bio1">
-        <img src="biography.webp" width="400px">
-      </div>
-      <div>
-        <div>赤星里奈</div>
-        <div>Rina Akaboshi</div>
-        <div class="prof">
-          <p>クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
-            <br>
-            円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
-            2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
-            現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
-          </p>
+    </section>
+    <section class="pb-8">
+      <h2 class="text-center py-8">
+        <div>プロフィール</div>
+        <div>Biography</div>
+      </h2>
+      <div class="flex">
+        <div>
+          <img src="biography.webp" class="rounded " width="400px">
         </div>
-        <a href="biography.html">> 詳細</a>
+        <div class="mt-2 flex-1 ml-12 mt-0">
+          <div class="text-2xl mt-2 mt-0 color1">
+            赤星里奈
+            <span class="text-lg color1">
+              Rina Akaboshi
+            </span>
+          </div>
+          <div class="my-2 flex">
+            <button class="items-center justify-center border lang1">Japanese</button>
+            <button class="items-center justify-center border lang1">English</button>
+          </div>
+          <div>
+            <p>クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+              <br>
+              円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
+              <br>
+              2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
+              <br>
+              現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
+            </p>
+          </div>
+          <button class="inline-block rounded border text-xs">
+            <a href="biography.html">> 詳細</a>
+          </button>
+        </div>
       </div>
-    </div>
+    </section>
     <h2 class="concert">
       <div>コンサート</div>
       <div>Concert</div>

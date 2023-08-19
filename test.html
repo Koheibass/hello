@@ -10,39 +10,42 @@
 </head>
 
 <body>
-  <h2 class="text-center">
-    <div>お問い合わせ</div>
-    <div class="">contact</div>
-  </h2>
-  <div>
-    <div class="my-4 text-center">ピアニスト 赤星里奈へのご依頼・お問い合わせなどは、こちらからお願い致します。</div>
-    <form action="/api/hello" method="get" novalidate id="contact-form" class="grid grid-cols-1 gap-4">
-      <div>
-        <label for="name">お名前</label>
-        <input class="flex w-full" id="name" name="name">
-        <div class="text-sm text-red-500">必須</div>
+  <main>
+    <section class="pb-8">
+      <h2 class="text-center py-8">
+        <div>プロフィール</div>
+        <div>Biography</div>
+      </h2>
+      <div class="flex">
+        <div>
+          <img src="biography.webp" class="rounded " width="400px">
+        </div>
+        <div class="mt-2 flex-1 ml-12 mt-0">
+          <div class="text-2xl mt-2 mt-0 color1">
+            赤星里奈
+            <span class="text-lg color1">
+              Rina Akaboshi
+            </span>
+          </div>
+          <div class="my-2 flex">
+            <button class="items-center justify-center border lang1">Japanese</button>
+            <button class="items-center justify-center border lang1">English</button>
+          </div>
+          <div>
+            <p>クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+              <br>
+              円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
+              <br>
+              2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
+              <br>
+              現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
+            </p>
+          </div>
+          <button class="inline-block rounded border text-xs">
+            <a href="biography.html">> 詳細</a>
+          </button>
+        </div>
       </div>
-      <div>
-        <label for="email">メールアドレス</label>
-        <input class="flex w-full" id="email" name="email">
-        <div class="text-sm text-red-500">必須</div>
-      </div>
-      <div>
-        <label class="text-sm" for="contact-form-type">お問い合わせの種別</label>
-        <select name="type">
-          <option value="playrequest">演奏依頼</option>
-          <option value="request">企業からのご依頼</option>
-          <option value="others">その他</option>
-        </select>
-      </div>
-      <div>
-        <label for="message">お問い合わせの内容</label>
-        <textarea class="flex w-full" id="message" name="message"></textarea>
-        <div class="text-sm text-red-500">必須</div>
-      </div>
-      <button class="inline-flex items-center justify-center bg-secondary" type="submit"
-        data-comform-touched="true">送信</button>
-    </form>
-  </div>
-  </div>
+    </section>
+  </main>
 </body>
