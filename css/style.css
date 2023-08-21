@@ -52,6 +52,8 @@ a {
 .main {
     flex-grow: 1;
     background-color: #fefaff;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 .news1 {
@@ -77,6 +79,54 @@ a {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
     letter-spacing: .025em;
+}
+
+.section1 {
+    padding-bottom: 2rem;
+
+}
+
+.first {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+}
+
+.border1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    line-height: 1;
+    color: #9d8566;
+}
+
+.border-line {
+    position: relative;
+    padding: 0 50px;
+    text-align: center;
+
+}
+
+.border-line::before,
+.border-line::after {
+    position: absolute;
+    top: calc(50% - 3px);
+    width: 250px;
+    height: 5px;
+    content: "";
+    flex-grow: 1;
+    border-top: solid 1px #9d8566;
+    border-bottom: solid 2px #9d8566;
+
+}
+
+.border-line::before {
+    left: 0;
+}
+
+.border-line::after {
+    right: 0;
 }
 
 .py-2 {
