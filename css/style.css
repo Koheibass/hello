@@ -52,8 +52,8 @@ a {
 .main {
     flex-grow: 1;
     background-color: #fefaff;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .news1 {
@@ -112,8 +112,8 @@ a {
 .border-line::after {
     position: absolute;
     top: calc(50% - 3px);
-    width: 250px;
-    height: 5px;
+    width: 40%;
+    height: 10%;
     content: "";
     flex-grow: 1;
     border-top: solid 1px #9d8566;
@@ -186,6 +186,17 @@ a {
     text-align: center;
 }
 
+.biotop {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    line-height: 1;
+    color: #9d8566;
+}
+
 .py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -208,7 +219,7 @@ a {
     color: #9d8566;
 }
 
-.pb-8 {
+.section2 {
     padding-bottom: 2rem;
 }
 
@@ -217,16 +228,24 @@ a {
     gap: 0.5rem;
     margin-bottom: 1rem;
     grid-template-columns: repeat;
-    justify-content: center;
+
 }
 
 .lang1 {
     margin: 1%;
 }
 
-.text-sm {
+.textdays {
     font-size: .875rem;
     line-height: 1.25rem;
+    color: #9d8566;
+}
+
+.updates1 {
+    display: block;
+    color: #feb7a3;
+    text-decoration-line: underline;
+
 }
 
 .block {
@@ -252,6 +271,64 @@ a {
     place-items: center;
 }
 
+.topmovie {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mainprof {
+    color: #9d8566;
+}
+
+.biophoto {
+    border-radius: 0.25rem;
+    max-width: 100%;
+}
+
+.bioname {
+    clear: both;
+    flex: 1 1 0%;
+    margin-left: 3rem;
+    margin-top: 0;
+}
+
+.bioname1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    clear: both;
+    margin-top: 0;
+    color: #9d8566;
+
+}
+
+.bioname2 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: #9d8566;
+
+}
+
+.biobutton {
+    display: flex;
+
+}
+
+.biobutton1 {
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    margin: 1%;
+
+}
+
+.biobutton2 {
+    border-radius: 0.25rem;
+    font-size: .75rem;
+    line-height: 1rem;
+    border-width: 1px;
+}
+
 .flex {
     display: flex;
     flex-direction: row;
@@ -260,6 +337,13 @@ a {
 
 .concert {
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    line-height: 1;
+    color: #9d8566;
 }
 
 .concert2 {
@@ -287,6 +371,7 @@ a {
 
 .movie2 {
     text-align: center;
+    max-width: 100%;
 }
 
 .mt-2 {
