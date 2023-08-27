@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript DOM Tutorial</title>
+
+    <style>
+        #profile.japanese {
+            color: red;
+        }
+
+        #profile.english {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript DOM Tutorial</h1>
+
+    <div>プロフィール</div>
+
+    <button onClick="switchToJapanese()">日本語</button>
+    <button onClick="switchToEnglish()">英語</button>
+
+    <div id="profile">
+        クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+        円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
+        2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
+        現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。
+    </div>
+
+    <script>
+        const japaneseProfile = `クラシック音楽を専門とするピアニスト。特にドイツ音楽に造詣が深いが、近年ではフランス音楽やロシア音楽にも研究心を持ち、レパートリーと表現の幅を拡げている。
+            円熟した表現と音楽性を深く追求した演奏に定評があり、響きの新しい可能性を探求するために奏法を研究し続けている。
+            2018 年に初のソロアルバム「Neue Welt ～新しい世界～」をリリース。
+            現在は自身の演奏に関する研究活動や後進の育成とともに、クラシック音楽界に貢献すべく活動の幅を広げている。`;
+        const englishProfile = `Rina Akaboshi is a classical concert pianist. Although her forte is German music, her recent focus has been on broadening her repertoire with French and Russian music. She has a reputation for pursuing a mature expression and deep musicality, while exploring techniques in-depth to discover the ideal touch to bring out new possibilities in every tone.
+After receiving numerous awards in both national and international competitions, in 2018, her first solo album, “Neue Welt – New World” was released. Her concert activities continue while studying under Mr. Yuya Tsuda, one of the most appreciated pianists in Japan, at Tokyo Art University (Graduate-level special course).`;
+
+        function switchToJapanese() {
+            document.getElementById("profile").innerHTML = japaneseProfile;
+            document.getElementById("profile").classList = "japanese";
+        }
+
+        function switchToEnglish() {
+            document.getElementById("profile").innerHTML = englishProfile;
+            document.getElementById("profile").classList = "english";
+        }
+    </script>
+</body>
+
+</html>

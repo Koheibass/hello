@@ -32,6 +32,7 @@
 
             for (let i = 0; i < parentMenuItem.length; i++) {
                 parentMenuItem[i].addEventListener('mouseover', dropDownMenuOpen);
+                parentMenuItem[i].addEventListener('mouseleave', dropDownMenuClose);
             }
 
             function dropDownMenuOpen(e) {
@@ -42,6 +43,15 @@
                     childMenuLink[i].classList.add('is-active');
                 }
 
+            }
+
+            function dropDownMenuClose(e) {
+                const childMenuLink = e.currentTarget.querySelectorAll('.drop-menu__link');
+                console.log(childMenuLink);
+
+                for (let i = 0; i < childMenuLink.length; i++) {
+                    childMenuLink[i].classList.remove('is-active');
+                }
             }
 
         }
