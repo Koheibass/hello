@@ -4,24 +4,35 @@
     justify-content: space-between;
     align-items: center;
     line-height: 0;
+
 }
 
 h1 {
     color: #a07c43;
     font-size: 30px;
     padding: 20px;
+    width: 100%;
     margin-left: 0.5rem
 }
 
 nav {
     display: flex;
     align-items: center;
+    width: 100%;
+}
+
+ul {
+    @media (min-width: 1024px) {
+        display: flex;
+    }
+
+    display: none;
 }
 
 li {
     list-style: none;
     float: left;
-    padding: 10px;
+    padding: 5px;
 }
 
 a {
@@ -39,9 +50,80 @@ a {
     margin: 5px;
 }
 
-.icon3 {}
+.menu {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 0px auto 0px;
+}
 
-.icon4 {}
+.menu__item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link {
+    display: block;
+    padding: 10px 10px;
+    margin: 10px 5px;
+    font-weight: bold;
+    background: ;
+    border: solid 1px #a07c43;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    background-color: #ebebeb;
+    color: #fefaff;
+}
+
+.drop-menu {
+    position: absolute;
+    top: 60px;
+    transition: all .3s;
+    padding: 0;
+    margin: 0;
+}
+
+.drop-menu__link {
+    display: block;
+    display: none;
+    background-color: #ffffff;
+    transition: all .3s;
+    padding: 20px 20px;
+    color: #a07c43;
+    text-decoration: none;
+}
+
+.drop-menu__link:hover {
+    background-color: #ffffff;
+
+}
+
+.drop-menu__link.is-active {
+    display: block;
+}
+
+.drop-menu__item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.icon3 {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+}
+
+.icon4 {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+
+}
 
 .button1 {
     padding: 5px;
@@ -459,17 +541,25 @@ a {
 
 .lisence {
     text-align: center;
-    margin-top: 5rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-top: 2rem;
 }
 
 .footer1 {
     margin-top: 2rem;
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 238 238 / var(--tw-bg-opacity));
+    height: 12rem;
+    background-color: #ffeeee;
+    padding-top: 4rem;
+
+
 }
 
 .footer2 {
     display: flex;
-    text-align: center;
     justify-content: center;
+}
+
+.footer3 {
+    display: inline-flex;
 }
